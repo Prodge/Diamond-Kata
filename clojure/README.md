@@ -1,36 +1,42 @@
-# diamond
+## Clojure Diamond Kata
 
-FIXME: description
+An implementation of the Diamond Kata in Clojure
 
-## Installation
+### Usage
 
-Download from http://example.com/FIXME.
+```lein run b```
+Where b is the deepest letter the diamond should react
 
-## Usage
+### Run Tests
 
-FIXME: explanation
+```lien test```
 
-    $ java -jar diamond-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+### Example output
+```
+$ lein run m
+             a
+            b b
+           c   c
+          d     d
+         e       e
+        f         f
+       g           g
+      h             h
+     i               i
+    j                 j
+   k                   k
+  l                     l
+ m                       m
+  l                     l
+   k                   k
+    j                 j
+     i               i
+      h             h
+       g           g
+        f         f
+         e       e
+          d     d
+           c   c
+            b b
+             a
+```

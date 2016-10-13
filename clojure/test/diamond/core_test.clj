@@ -20,7 +20,7 @@
   (testing "The collection for the final structure is valid"
     (is (= (get-diamond 3 5)
            ["   a"
-			"  b b"
-			" c   c"
-			"  b b"
-			"   a"]))))
+            "  b b"
+            " c   c"
+            "  b b"
+            "   a"]))))

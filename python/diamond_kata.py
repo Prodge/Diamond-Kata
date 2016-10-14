@@ -6,7 +6,6 @@
 
 '''
 
-
 import sys
 
 def letter_at_row(row):

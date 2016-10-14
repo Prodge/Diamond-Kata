@@ -17,7 +17,7 @@
 
 (defn line-string [line order]
   (apply str
-    (if (= line 0)
+    (if (zero? line)
       [(spaces order) "a"]
       [(start-spaces line order) (row-letter line) (middle-spaces line) (row-letter line)])))
 

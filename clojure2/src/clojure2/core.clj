@@ -10,15 +10,16 @@
   (spaces (- order line)))
 
 (defn middle-spaces [line]
-  ( -> line (* 2) dec spaces))
+  (-> line (* 2) dec spaces))
 
 (defn row-letter [row]
   (-> asci-a (+ row) char str))
 
 (defn line-string [line order]
-  (if (= line 0)
-    (str (spaces order) "a")
-    (str (start-spaces line order) (row-letter line) (middle-spaces line) (row-letter line))))
+  (apply str
+    (if (= line 0)
+      [(spaces order) "a"]
+      [(start-spaces line order) (row-letter line) (middle-spaces line) (row-letter line)])))
 
 (defn get-diamond-top [order]
   (loop [line 0 diamond []]

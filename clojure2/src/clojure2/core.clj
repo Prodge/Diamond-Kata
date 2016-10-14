@@ -10,7 +10,7 @@
   (spaces (- order line)))
 
 (defn middle-spaces [line]
-  (spaces (dec (* 2 line))))
+  ( -> line (* 2) dec spaces))
 
 (defn row-letter [row]
   (-> asci-a (+ row) char str))
@@ -33,6 +33,6 @@
 (defn -main
   "Diamond Kata by Prodge"
   [arg]
-  (let [order (- (int (.charAt arg 0)) asci-a)]
+  (let [order (-> arg first int (- asci-a))]
     (doall (map println (get-diamond order)))))
 

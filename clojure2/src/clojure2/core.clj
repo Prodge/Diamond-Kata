@@ -29,7 +29,7 @@
 
 (defn get-diamond [order]
   (let [top (get-diamond-top order)]
-    (apply conj top (reverse (butlast top)))))
+    (into top (reverse (butlast top)))))
 
 (defn -main
   "Diamond Kata by Prodge"
